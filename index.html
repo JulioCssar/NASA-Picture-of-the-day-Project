@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Picture of the day</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="icon" href="img/astronaut_icon.png" type="image/x-icon" />
+
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="NASA-title">NASA Picture of the Day</h1>
+    <img id="astroimg" src="img/astro-preview.png" alt="astronautinha">
+    <img src="img/astronauta (2).png" alt="astronauta com megafone" width="0px" />
+
+    <!-- Container para centralizar a APod -->
+    <div class="apod-container">
+      <!-- Aqui será substituída a imagem ou vídeo da APod -->
+      <img class="NASA-img" src="img/astronauta (2).png" alt="" />
+      <iframe class="NASA-video" src="" frameborder="0"></iframe>
+
+      <h2 class="NASA-title"></h2>
+      <p class="NASA-description">A imagem irá aparecer aqui!</p>
+    </div>
+
+  </div>
+
+  <form id="date-form">
+    <label for="date-input">Selecione uma data:</label>
+    <div class="input-button-wrapper">
+      <div class="date-wrapper">
+        <input type="date" id="date-input" name="date-input" />
+      </div>
+
+      <button type="button" name="button" class="btn">
+        <strong>Pesquisar</strong>
+
+        <div id="container-stars">
+          <div id="stars"></div>
+        </div>
+
+        <div id="glow">
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </button>
+    </div>
+    <img src="img/astronauta_foguete.png" alt="" width="200px">
+  </form>
+</body>
+
+</html>
